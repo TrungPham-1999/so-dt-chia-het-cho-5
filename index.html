@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script>
+            var n = 0;
+            var f0=0 , f1=1 , fn;
+            n = parseInt(prompt("nhap do n:"));
+            for ( var i=0;i<=n;i++){
+                if(i<2){
+                    if(i%5==0){
+                        document.write(i,"la so dau tien trong fibonacci chia het cho 5");
+                        break;                       
+                    }
+                }else{
+                    fn=f0+f1;
+                    f0=f1;
+                    f1=fn;
+                    if(fn%5==0){
+                        document.write(fn,"la so dau tien trong fibonacci chia het cho 5")
+                    }
+                
+                }
+            }
+
+        </script>
+    </head>
+</html>
